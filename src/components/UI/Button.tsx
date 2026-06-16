@@ -27,7 +27,7 @@ const sizeStyles: Record<ButtonSize, string> = {
 };
 
 const baseStyles =
-  'inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 disabled:cursor-not-allowed focus:outline-none focus:ring-primary focus:ring-offset-2 disabled:opacity-50';
+  'inline-flex items-center justify-center rounded-full font-medium cursor-pointer transition-all duration-200 disabled:cursor-not-allowed focus:outline-none focus:ring-primary focus:ring-offset-2 disabled:opacity-50';
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
