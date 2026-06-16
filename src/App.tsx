@@ -1,6 +1,7 @@
 import Avatar from './components/UI/Avatar';
 import Badge from './components/UI/Badge';
 import Button from './components/UI/Button';
+import CategoryPill from './components/UI/CategoryPill';
 import FeatureItem from './components/UI/FeatureItem';
 import Rating from './components/UI/Rating';
 import SectionHeader from './components/UI/SectionHeader';
@@ -131,6 +132,87 @@ function App() {
             layout='horizontal'
           />
         </div>
+      </div>
+
+      <div className='p-16 bg-blue-50 flex gap-3 items-center'>
+        <CategoryPill
+          label='Ut Sed Eros'
+          color='#F97316'
+          borderColor='#F97316'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/a/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 5,
+            price: 450,
+          }}
+        />
+        <CategoryPill
+          label='Curabitur Egestas'
+          color='#F87171'
+          borderColor='#F87171'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/b/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 4,
+            price: 350,
+          }}
+        />
+        <CategoryPill
+          label='Quisque Conseq'
+          color='#92400E'
+          borderColor='#92400E'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/c/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 4,
+            price: 280,
+          }}
+        />
+        <CategoryPill
+          label='Cras Convallis'
+          color='#FBBF24'
+          borderColor='#FBBF24'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/d/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 3,
+            price: 200,
+          }}
+        />
+        <CategoryPill
+          label='Vestibulum faucibus'
+          color='#A855F7'
+          borderColor='#A855F7'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/e/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 5,
+            price: 500,
+          }}
+        />
+        <CategoryPill
+          label='Ut Sed Eros'
+          color='#38BDF8'
+          borderColor='#38BDF8'
+          course={{
+            thumbnail: 'https://picsum.photos/seed/f/400/300',
+            title: 'Integer id Orc Sed Ante Tincidunt',
+            description:
+              'Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.',
+            rating: 4,
+            price: 320,
+          }}
+        />
       </div>
     </>
   );
