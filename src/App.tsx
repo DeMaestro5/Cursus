@@ -7,6 +7,7 @@ import NewsCard from './components/UI/NewsCard';
 import Rating from './components/UI/Rating';
 import SectionHeader from './components/UI/SectionHeader';
 import StatCard from './components/UI/StatCard';
+import TestimonialCard from './components/UI/TestimonialCard';
 
 function App() {
   return (
@@ -252,6 +253,16 @@ function App() {
             description='This year, investors have reaped big financial returns from betting on Zoom...'
           />
         </div>
+      </div>
+      <div className='p-10 bg-gray-100 flex gap-6'>
+        <TestimonialCard
+          testimonial="Thank you so much for your help. It's exactly what I've been looking for. You won't regret it. It really saves me time and effort. TOTC is exactly what our business has been lacking."
+          name='Gloria Rose'
+          rating={4}
+          reviews={12}
+          at='Yelp'
+          className='max-w-sm'
+        />
       </div>
     </>
   );
