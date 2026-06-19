@@ -31,15 +31,17 @@ const SectionHeader = ({
 
   return (
     <div
-      className={`${align === 'center' ? 'text-center' : 'text-left'} ${className}`}
+      className={`${
+        align === 'center' ? 'text-center' : 'text-left'
+      } ${className}`}
     >
       <h2 className='text-3xl font-bold text-primary-dark leading-tight'>
         {renderTitle()}
       </h2>
       {subtitle && (
         <p
-          className="mt-3 text-gray-text text-sm leading-relaxed max-w-xl
-          ${align === 'center' ? 'mx-auto' : ''}"
+          className={`mt-3 text-gray-text text-sm leading-relaxed max-w-xl
+          ${align === 'center' ? 'mx-auto' : ''}`}
         >
           {subtitle}
         </p>

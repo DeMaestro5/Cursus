@@ -60,3 +60,13 @@
   animation: float 4s ease-in-out infinite;
   animation-delay: 0.5s;
 }
+
+@layer utilities {
+  .text-stat-gradient {
+    background: linear-gradient(90deg, #2f78b7 0%, #3b9ab8 50%, #49bbbd 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

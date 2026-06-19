@@ -1,5 +1,5 @@
-import Button from '../../UI/Button';
-import Navbar from '../../layout/Navbar';
+import Button from '../../../UI/Button';
+import Navbar from '../../../layout/Navbar';
 import HeroCard from './HeroCard';
 
 const Hero = () => {
