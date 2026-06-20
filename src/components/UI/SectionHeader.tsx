@@ -23,7 +23,7 @@ const SectionHeader = ({
     return (
       <>
         {parts[0]}
-        <span className='text-neon'>{highlightedWord}</span>
+        <span className='text-primary'>{highlightedWord}</span>
         {parts[1]}
       </>
     );

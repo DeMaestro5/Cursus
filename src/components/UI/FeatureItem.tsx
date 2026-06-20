@@ -22,7 +22,7 @@ const FeatureItem = ({
           ${
             isHorizontal
               ? 'flex-row items-start'
-              : 'relative flex-col items-center text-center bg-white rounded-2xl shadow-md pt-20 pb-8 px-6 w-72'
+              : 'relative flex-col items-center text-center bg-white rounded-2xl shadow-lg pt-20 pb-8 px-6 w-72'
           }
           ${className}
         `}
@@ -47,7 +47,9 @@ const FeatureItem = ({
         className={`flex flex-col gap-2 ${isHorizontal ? '' : 'items-center'}`}
       >
         <h3
-          className={`font-bold text-primary-dark ${isHorizontal ? 'text-sm' : 'text-base'}`}
+          className={`font-bold text-primary-dark ${
+            isHorizontal ? 'text-sm' : 'text-base'
+          }`}
         >
           {title}
         </h3>
