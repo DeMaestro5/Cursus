@@ -3,6 +3,7 @@ import Button from '../../../UI/Button';
 
 interface HeroCardProps {
   icon?: React.ReactNode;
+  iconBg?: string;
   heading?: string;
   text?: string;
   avatar?: string;
@@ -12,6 +13,7 @@ interface HeroCardProps {
 
 const HeroCard = ({
   icon,
+  iconBg = 'bg-primary/10',
   heading,
   text,
   avatar,
@@ -26,7 +28,9 @@ const HeroCard = ({
 
       <div className=' flex items-center gap-3'>
         {icon && (
-          <div className='w-10 h-10 rounded-xl bg-primary/10 text-primary flex justify-center items-center shrink-0 mb-4'>
+          <div
+            className={`w-10 h-10 rounded-xl ${iconBg} text-white flex justify-center items-center shrink-0 mb-4`}
+          >
             {icon}
           </div>
         )}

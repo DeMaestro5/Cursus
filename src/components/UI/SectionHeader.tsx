@@ -46,7 +46,7 @@ const SectionHeader = ({
       </h2>
       {subtitle && (
         <p
-          className={`mt-3 text-gray-text text-sm leading-relaxed max-w-xl
+          className={`mt-3 text-muted text-sm leading-relaxed max-w-xl
           ${align === 'center' ? 'mx-auto' : ''}`}
         >
           {subtitle}

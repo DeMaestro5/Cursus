@@ -1,6 +1,7 @@
 import Button from '../../../UI/Button';
 import Navbar from '../../../layout/Navbar';
 import HeroCard from './HeroCard';
+import { CalendarDays, Columns3, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -57,50 +58,21 @@ const Hero = () => {
           />
 
           {/* Floating icon */}
-          <div className='absolute top-[12%] right-[4%] z-20 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center animate-float'>
-            <svg
-              viewBox='0 0 24 24'
-              fill='none'
-              className='w-6 h-6'
-              stroke='#23BDEE'
-              strokeWidth={2}
-            >
-              <rect x='3' y='4' width='18' height='18' rx='2' />
-              <path d='M16 2v4M8 2v4M3 10h18' />
-            </svg>
+          <div className='absolute top-[12%] right-[4%] z-20 w-14 h-14 bg-accent rounded-lg shadow-lg flex items-center justify-center animate-float'>
+            <Columns3 className='text-accent bg-white rounded-lg w-10 h-10' />
           </div>
 
           <HeroCard
-            icon={
-              <svg
-                viewBox='0 0 24 24'
-                fill='none'
-                className='w-5 h-5'
-                stroke='#23BDEE'
-                strokeWidth={2}
-              >
-                <rect x='3' y='4' width='18' height='18' rx='2' />
-                <path d='M16 2v4M8 2v4M3 10h18' />
-              </svg>
-            }
+            icon={<CalendarDays className='w-7 h-7' />}
+            iconBg='bg-sky-400'
             heading='250k'
             text='Assisted Student'
             className='absolute top-[28%] left-[-4%] z-20 animate-float'
           />
 
           <HeroCard
-            icon={
-              <svg
-                viewBox='0 0 24 24'
-                fill='none'
-                className='w-5 h-5'
-                stroke='#F48C06'
-                strokeWidth={2}
-              >
-                <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z' />
-                <polyline points='22,6 12,13 2,6' />
-              </svg>
-            }
+            icon={<Mail className='w-7 h-7' />}
+            iconBg='bg-orange'
             heading='Congratulations'
             text='Your admission completed'
             className='absolute top-[50%] right-[-2%] z-20 animate-float-delay-1'

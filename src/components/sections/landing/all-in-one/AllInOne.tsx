@@ -1,5 +1,6 @@
 import FeatureItem from '../../../UI/FeatureItem';
 import SectionHeader from '../../../UI/SectionHeader';
+import { FileText, CalendarDays, Users } from 'lucide-react';
 
 export default function AllInOne() {
   return (
@@ -14,20 +15,23 @@ export default function AllInOne() {
 
         <div className='flex gap-12 justify-center items-center'>
           <FeatureItem
-            icon='📆'
+            icon={<FileText className='w-7 h-7' />}
+            iconBg='bg-[#6448FE]'
             title='Online Billing, invoicing, & contract'
             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum et sem non vestibulum. '
           />
 
           <FeatureItem
-            icon='📆'
-            title='Online Billing, invoicing, & contract'
+            icon={<CalendarDays className='w-7 h-7' />}
+            iconBg='bg-primary'
+            title='Easy Scheduling & Attendance Tracking'
             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum et sem non vestibulum. '
           />
 
           <FeatureItem
-            icon='📆'
-            title='Online Billing, invoicing, & contract'
+            icon={<Users className='w-7 h-7' />}
+            iconBg='bg-sky-400'
+            title='Customer Tracking'
             description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum et sem non vestibulum. '
           />
         </div>
