@@ -1,10 +1,10 @@
 import Button, { type ButtonVariant } from '../../../UI/Button';
 
 interface WhatIsCardProps {
-  title?: string;
-  buttonText?: string;
-  buttonVariant?: ButtonVariant;
-  bgImage?: string;
+  title: string;
+  buttonText: string;
+  buttonVariant: ButtonVariant;
+  bgImage: string;
   className?: string;
 }
 
@@ -17,7 +17,7 @@ const WhatIsCard = ({
 }: WhatIsCardProps) => {
   return (
     <div
-      className={`w-100 h-70 bg-cover bg-no-repeat rounded-2xl relative ${className}`}
+      className={`w-full flex-1 h-70 bg-cover bg-no-repeat rounded-2xl relative ${className}`}
       style={{ backgroundImage: `${bgImage}` }}
     >
       <div className='absolute inset-0 w-full h-full z-10 flex flex-col justify-center items-center gap-3'>

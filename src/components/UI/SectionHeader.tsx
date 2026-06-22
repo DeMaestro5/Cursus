@@ -29,7 +29,7 @@ const SectionHeader = ({
     );
   };
 
-  const hasCustomTextColor = className.includes('text-');
+  const hasCustomTextColor = className.includes('text-bla');
 
   return (
     <div
