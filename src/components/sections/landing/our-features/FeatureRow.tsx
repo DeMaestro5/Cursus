@@ -46,11 +46,11 @@ export default function FeatureRow({
     <div
       className={`flex gap-16 justify-center items-center ${imagePosition === 'right' ? 'flex-row-reverse' : ''} ${className}`}
     >
-      <div className='relative flex-3'>
+      <div className='relative flex-3 h-[400px] '>
         <img
           src={srcImage}
           alt='image'
-          className='relative z-10 w-full h-full rounded-2xl object-cover shadow-lg '
+          className='relative z-10 w-full max-h-full rounded-2xl object-contain '
         />
         {decorations}
       </div>
