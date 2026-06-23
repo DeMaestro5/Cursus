@@ -53,7 +53,7 @@ const Hero = () => {
           <div
             className='absolute inset-0 bg-no-repeat bg-bottom bg-contain'
             style={{
-              backgroundImage: "url('/src/assets/landing/hero.png')",
+              backgroundImage: "url('/src/assets/landing/herogirl.png')",
             }}
           />
 
