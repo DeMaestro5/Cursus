@@ -7,7 +7,9 @@ export default function Courses() {
     <section className='py-16 px-20 '>
       <div className='flex flex-col space-y-10'>
         <div className='space-y-2'>
-          <h3 className='font-bold text-2xl'>Explore Courses</h3>
+          <h3 className='font-bold text-2xl text-primary-dark'>
+            Explore Courses
+          </h3>
           <p className='text-muted text-sm'>
             Aenean urna ex, cursus et aliquet sit amet, elementum a lorem.{' '}
           </p>
@@ -21,7 +23,9 @@ export default function Courses() {
               <div className='flex justify-between items-center py-5'>
                 <div className='flex gap-4'>
                   <Icon className='w-7 h-7 text-primary' />
-                  <span className='font-bold '>{category.label}</span>
+                  <span className='font-bold text-primary-dark'>
+                    {category.label}
+                  </span>
                 </div>
                 <div className='flex flex-end gap-8 items-center'>
                   <span className='text-primary cursor-pointer text-sm'>
