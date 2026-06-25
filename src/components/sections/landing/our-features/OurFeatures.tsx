@@ -1,4 +1,4 @@
-import { Calendar, ChartColumn } from 'lucide-react';
+import { Calendar, LayoutGrid, SquareStack, Users } from 'lucide-react';
 import SectionHeader from '../../../UI/SectionHeader';
 import FeatureRow from './featureRow';
 import Button from '../../../UI/Button';
@@ -27,15 +27,15 @@ export default function OurFeatures() {
             }
             bulletPoints={[
               {
-                icon: <ChartColumn />,
+                icon: <LayoutGrid />,
                 text: 'ultricies. Suspendisse egestas sem at nisl molestie rutrum. Aenean pharetra vulputate turpis, quis hendrerit metus. Vestibulum sed odio nec nunc faucibus tempor.',
               },
               {
-                icon: <ChartColumn />,
+                icon: <SquareStack />,
                 text: 'ultricies. Suspendisse egestas sem at nisl molestie rutrum. Aenean pharetra vulputate turpis, quis hendrerit metus. Vestibulum sed odio nec nunc faucibus tempor.',
               },
               {
-                icon: <ChartColumn />,
+                icon: <Users />,
                 text: 'ultricies. Suspendisse egestas sem at nisl molestie rutrum. Aenean pharetra vulputate turpis, quis hendrerit metus. Vestibulum sed odio nec nunc faucibus tempor.',
               },
             ]}
@@ -43,8 +43,8 @@ export default function OurFeatures() {
           <FeatureRow
             srcImage='/src/assets/landing/featureImage.png'
             imagePosition='right'
-            title='A user interface design for the class.'
-            highlightedWord='user interface'
+            title='Tools for teachers and learner'
+            highlightedWord='Tools'
             decorations={
               <>
                 <div className='absolute w-24 h-24 bg-cyan rounded-full -top-10 -right-10 animate-float' />
@@ -73,8 +73,8 @@ export default function OurFeatures() {
               </>
             }
             imagePosition='left'
-            title='A user interface design for the class.'
-            highlightedWord='user interface'
+            title='Assessment, Quizzes, and Tests'
+            highlightedWord='Quizzes'
             description='ipsum dolor sit amet, consectetur adipiscing elit. Sed porta hendrerit ligula, ac viverra diam laoreet ut. Curabitur et eleifend neque.'
           />
           <FeatureRow
@@ -90,8 +90,8 @@ export default function OurFeatures() {
               </>
             }
             imagePosition='right'
-            title='A user interface design for the class.'
-            highlightedWord='user interface'
+            title='Class Management Tools for Educators'
+            highlightedWord='Class Management'
             description='ipsum dolor sit amet, consectetur adipiscing elit. Sed porta hendrerit ligula, ac viverra diam laoreet ut. Curabitur et eleifend neque.'
           />
           <FeatureRow
@@ -108,8 +108,8 @@ export default function OurFeatures() {
               </>
             }
             imagePosition='left'
-            title='A user interface design for the class.'
-            highlightedWord='user interface'
+            title='One on One Discussions'
+            highlightedWord='Discussions'
             description='ipsum dolor sit amet, consectetur adipiscing elit. Sed porta hendrerit ligula, ac viverra diam laoreet ut. Curabitur et eleifend neque.'
           />
         </div>

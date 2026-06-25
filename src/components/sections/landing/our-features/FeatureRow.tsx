@@ -50,7 +50,7 @@ export default function FeatureRow({
         <img
           src={srcImage}
           alt='image'
-          className='relative z-10 w-full max-h-full rounded-2xl object-contain '
+          className='relative z-10 w-full h-full rounded-2xl object-contain '
         />
         {decorations}
       </div>
@@ -62,7 +62,7 @@ export default function FeatureRow({
           bulletPoints.map((bullet, index) => (
             <div key={index} className='flex items-start gap-4'>
               <div className='flex justify-center items-center gap-4'>
-                <div className='bg-gray-100 w-12 h-12 shrink-0 rounded-full flex justify-center items-center shadow-[0_20px_60px_-10px_rgba(0,0,0,0.1)]'>
+                <div className='bg-gray-100 w-12 h-12 shrink-0 text-orange rounded-full flex justify-center items-center shadow-[0_20px_60px_-10px_rgba(0,0,0,0.1)]'>
                   {bullet.icon}
                 </div>{' '}
                 <p className='text-muted text-sm'>{bullet.text}</p>
