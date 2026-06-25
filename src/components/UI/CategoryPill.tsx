@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Rating from './Rating';
 import Button from './Button';
 
@@ -14,6 +14,7 @@ interface CategoryPillProps {
     rating: number;
   };
   className?: string;
+  isLast?: boolean;
 }
 
 const CategoryPill = ({
@@ -21,9 +22,22 @@ const CategoryPill = ({
   color,
   borderColor = '#23BDEE',
   course,
+  isLast,
   className = '',
 }: CategoryPillProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [openLeft, setOpenLeft] = useState(false);
+
+  const ref = useRef(null);
+
+  const handleHover = () => {
+    const rect = ref.current?.getBoundingClientRect();
+
+    const willOverflow = rect.right + 320 > window.innerWidth;
+
+    setOpenLeft(willOverflow);
+    setIsExpanded(true);
+  };
 
   // Derive lighter versions of the color for the back layers
   const lightColor = `${color}50`;
@@ -31,15 +45,21 @@ const CategoryPill = ({
 
   return (
     <div
-      className={`relative shrink-0 cursor-pointer transition-all duration-300 ease-in-out h-64 ${isExpanded ? 'w-96' : 'w-14'} ${className}`}
+      ref={ref}
+      className={`relative shrink-0 cursor-pointer transition-all duration-300 ease-in-out h-64 ${isExpanded ? 'w-96' : 'w-16'} ${className}`}
       style={{
         transform: isExpanded ? 'rotate(0deg)' : 'rotate(-6deg)',
         transition: 'transform 300ms ease, width 300ms ease',
         // Extra margin to account for rotation not clipping neighbors
         margin: '0 12px',
       }}
-      onMouseEnter={() => setIsExpanded(true)}
-      onMouseLeave={() => setIsExpanded(false)}
+      onMouseEnter={() => {
+        handleHover();
+      }}
+      onMouseLeave={() => {
+        setIsExpanded(false);
+        setOpenLeft(false);
+      }}
     >
       {/* Collapsed state — vertical pill */}
       <div
@@ -91,8 +111,12 @@ const CategoryPill = ({
 
       {/* Expanded state — course card */}
       <div
-        className={`absolute inset-0 flex flex-row rounded-3xl overflow-hidden bg-white transition-opacity duration-200 ${isExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-        style={{ border: `2px solid ${borderColor}`, padding: '10px' }}
+        className={`absolute inset-0 flex flex-row rounded-3xl overflow-hidden bg-white transition-opacity duration-200 ${isLast ? 'right-0' : 'left-0'} ${isExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        style={{
+          border: `2px solid ${borderColor}`,
+          padding: '10px',
+          transform: openLeft ? 'translateX(100%)' : 'translateX(0)',
+        }}
       >
         {/* LEFT — Thumbnail (square, fixed width) */}
         <div className='w-40 h-full shrink-0 overflow-hidden rounded-2xl'>

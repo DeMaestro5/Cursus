@@ -1,4 +1,5 @@
 import AllInOne from '../components/sections/landing/all-in-one/AllInOne';
+import Courses from '../components/sections/landing/courses/Courses';
 import Everything from '../components/sections/landing/everything/Everything';
 import Hero from '../components/sections/landing/hero/Hero';
 import OurFeatures from '../components/sections/landing/our-features/OurFeatures';
@@ -15,6 +16,7 @@ export default function Landing() {
         <WhatIs />
         <Everything />
         <OurFeatures />
+        <Courses />
       </div>
     </div>
   );
