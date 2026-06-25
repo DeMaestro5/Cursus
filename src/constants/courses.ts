@@ -1,4 +1,4 @@
-// import { Palette, Braces, TrendingUp, Brain } from 'lucide-react';
+import { Palette, Braces, TrendingUp, Brain } from 'lucide-react';
 export interface Course {
   id: string;
   title: string;
@@ -15,7 +15,7 @@ export interface Course {
 export interface CourseCategory {
   id: string;
   label: string;
-  icon: React.ReactNode;
+  icon: React.ElementType;
   courses: Course[];
 }
 
@@ -46,7 +46,7 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
   {
     id: 'design',
     label: 'Design & Creative',
-    icon: '🎨',
+    icon: Palette,
     courses: [
       {
         id: 'design-1',
@@ -313,7 +313,7 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
   {
     id: 'development',
     label: 'Web Development',
-    icon: '💻',
+    icon: Braces,
     courses: [
       {
         id: 'dev-1',
@@ -580,7 +580,7 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
   {
     id: 'business',
     label: 'Business & Finance',
-    icon: '📊',
+    icon: TrendingUp,
     courses: [
       {
         id: 'biz-1',
@@ -847,7 +847,7 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
   {
     id: 'personal',
     label: 'Personal Development',
-    icon: '🌱',
+    icon: Brain,
     courses: [
       {
         id: 'personal-1',
