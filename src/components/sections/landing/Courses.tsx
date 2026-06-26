@@ -1,5 +1,5 @@
-import { COURSE_CATEGORIES } from '../../../../constants/courses';
-import CategoryPill from '../../../UI/CategoryPill';
+import { COURSE_CATEGORIES } from '../../../constants/courses';
+import CategoryPill from '../../UI/CategoryPill';
 import { ArrowBigRight } from 'lucide-react';
 
 export default function Courses() {

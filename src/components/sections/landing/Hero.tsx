@@ -1,5 +1,5 @@
-import Button from '../../../UI/Button';
-import Navbar from '../../../layout/Navbar';
+import Button from '../../UI/Button';
+import Navbar from '../../layout/Navbar';
 import HeroCard from './HeroCard';
 import { CalendarDays, Columns3, Mail } from 'lucide-react';
 

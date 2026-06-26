@@ -1,7 +1,7 @@
 import { Calendar, LayoutGrid, SquareStack, Users } from 'lucide-react';
-import SectionHeader from '../../../UI/SectionHeader';
-import FeatureRow from './featureRow';
-import Button from '../../../UI/Button';
+import SectionHeader from '../../UI/SectionHeader';
+import FeatureRow from './FeatureRow';
+import Button from '../../UI/Button';
 
 export default function OurFeatures() {
   return (

@@ -1,4 +1,4 @@
-import Button, { type ButtonVariant } from '../../../UI/Button';
+import Button, { type ButtonVariant } from '../../UI/Button';
 
 interface WhatIsCardProps {
   title: string;
