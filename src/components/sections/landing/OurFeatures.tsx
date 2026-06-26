@@ -113,7 +113,7 @@ export default function OurFeatures() {
             description='ipsum dolor sit amet, consectetur adipiscing elit. Sed porta hendrerit ligula, ac viverra diam laoreet ut. Curabitur et eleifend neque.'
           />
         </div>
-        <div className='flex flex-row justify-center items-center'>
+        <div className='flex flex-row justify-center items-center animate-float'>
           <Button variant='outline' size='md' className='font-normal'>
             See More features
           </Button>

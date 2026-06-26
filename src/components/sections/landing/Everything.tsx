@@ -41,8 +41,8 @@ export default function Everything({ showLearnMore = true }: EverythingProps) {
           alt='image'
           className='relative z-10 w-full h-96 rounded-2xl object-cover shadow-lg '
         />
-        <button className='absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 transition-colors'>
-          <span className='text-primary text-xl ml-1 cursor-pointer'>▶</span>
+        <button className='absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white cursor-pointer rounded-full flex items-center justify-center shadow-lg hover:bg-white/90 transition-colors'>
+          <span className='text-primary text-xl ml-1 '>▶</span>
         </button>
       </div>
     </section>
