@@ -1,10 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useCarousel } from '../../../../hooks/useCarousel';
-import { TESTIMONIAL_SLIDES } from '../../../../constants/testimonials';
+import { useCarousel } from '../../../hooks/useCarousel';
+import { TESTIMONIAL_SLIDES } from '../../../constants/testimonials';
 import ImageStack from './ImageStack';
-import TestimonialCard from '../../../UI/TestimonialCard';
-import { useImagePreloader } from '../../../../hooks/useImagePreloader';
+import TestimonialCard from '../../UI/TestimonialCard';
+import { useImagePreloader } from '../../../hooks/useImagePreloader';
 
 const ALL_SLIDES = [
   {

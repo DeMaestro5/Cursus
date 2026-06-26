@@ -1,5 +1,5 @@
-import Avatar from '../../../UI/Avatar';
-import Button from '../../../UI/Button';
+import Avatar from '../../UI/Avatar';
+import Button from '../../UI/Button';
 
 interface HeroCardProps {
   icon?: React.ReactNode;

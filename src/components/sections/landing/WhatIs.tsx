@@ -1,6 +1,6 @@
-import SectionHeader from '../../../UI/SectionHeader';
-import whatImage2 from '../../../../assets/landing/whatImage2.jpg';
-import whatIsImage3 from '../../../../assets/landing/whatIsImage3.jpg';
+import SectionHeader from '../../UI/SectionHeader';
+import whatImage2 from './../../../assets/landing/whatImage2.jpg';
+import whatIsImage3 from './../../../assets/landing/whatIsImage3.jpg';
 import WhatIsCard from './whatIsCard';
 
 export default function whatIs() {

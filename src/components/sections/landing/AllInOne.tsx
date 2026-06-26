@@ -1,5 +1,5 @@
-import FeatureItem from '../../../UI/FeatureItem';
-import SectionHeader from '../../../UI/SectionHeader';
+import FeatureItem from '../../UI/FeatureItem';
+import SectionHeader from '../../UI/SectionHeader';
 import { FileText, CalendarDays, Users } from 'lucide-react';
 
 export default function AllInOne() {

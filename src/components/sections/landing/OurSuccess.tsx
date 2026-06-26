@@ -1,5 +1,5 @@
-import SectionHeader from '../../../UI/SectionHeader';
-import StatCard from '../../../UI/StatCard';
+import SectionHeader from '../../UI/SectionHeader';
+import StatCard from '../../UI/StatCard';
 
 export default function OurSuccess() {
   return (
