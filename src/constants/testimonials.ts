@@ -12,9 +12,9 @@ export const TESTIMONIAL_SLIDES: TestimonialSlide[] = [
   {
     id: 2,
     image: '/src/assets/landing/test5.jpg',
-    name: 'Gloria Rose',
+    name: 'Jennifer Rose',
     testimonial:
-      "Thank you so much for your help. It's exactly what I've been looking for. You won't regret it. It really saves me time and effort. Cursus is exactly what our business has been lacking.",
+      "Thank you so much for your help. It's exactly what I've been looking for. Cursus is exactly what our business has been lacking.",
     rating: 5,
     reviews: 12,
     at: 'Yelp',

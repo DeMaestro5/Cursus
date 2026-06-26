@@ -119,9 +119,9 @@ export default function Testimonial() {
   };
 
   return (
-    <section className='py-20 px-16 flex items-start justify-center gap-24'>
+    <section className='py-20 px-16 flex items-start justify-center gap-40'>
       {/* LEFT — static */}
-      <div className='flex flex-[2] flex-col gap-6'>
+      <div className='flex flex-2 flex-col gap-6'>
         <div className='flex gap-4'>
           <div className='w-8 h-[1px] bg-muted self-center' />
           <span className='text-primary-dark font-semibold text-sm tracking-[5px]'>
