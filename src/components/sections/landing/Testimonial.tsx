@@ -41,14 +41,14 @@ export default function Testimonial() {
         <h3 className='text-primary-dark text-4xl font-semibold'>
           What They Say?
         </h3>
-        <p className='text-sm text-gray-text leading-relaxed'>
+        <p className='text-sm text-muted leading-relaxed'>
           Cursus has got more than 100k positive ratings from our users around
           the world.
         </p>
-        <p className='text-sm text-gray-text leading-relaxed'>
+        <p className='text-sm text-muted leading-relaxed'>
           Some of the students and teachers were greatly helped by the Skilline.
         </p>
-        <p className='text-sm text-gray-text leading-relaxed'>
+        <p className='text-sm text-muted leading-relaxed'>
           Are you too? Please give your assessment
         </p>
         <div className='flex items-center border border-primary rounded-full cursor-pointer hover:bg-primary/5 transition-colors w-fit'>
@@ -62,7 +62,7 @@ export default function Testimonial() {
       </div>
 
       {/* RIGHT — animated stack */}
-      <div className='relative w-[400px] h-[500px] flex-shrink-0'>
+      <div className='relative w-[400px] h-[500px] shrink-0'>
         <ImageStack slides={ALL_SLIDES} activeIndex={activeIndex} />
 
         {/* TestimonialCard — text crossfades independently */}
