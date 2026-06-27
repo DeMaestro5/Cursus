@@ -8,8 +8,8 @@ export interface Course {
   thumbnail: string;
   instructor: string;
   category: string;
-  color: string;
-  borderColor: string;
+  color?: string;
+  borderColor?: string;
 }
 
 export interface CourseCategory {

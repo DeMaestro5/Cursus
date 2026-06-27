@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import { NAV_LINKS } from '../../constants/navigation';
 import type { User } from '../../types/user.types';
 import Avatar from '../UI/Avatar';
 import Button from '../UI/Button';
-import Logo from '../UI/logo';
+import Logo from '../UI/Logo';
 
 interface NavbarProps {
   user?: User;
@@ -23,9 +24,9 @@ const Navbar = ({ user, transparent = false, className = '' }: NavbarProps) => {
       {/* MIDDLE — Nav links */}
       <div className='absolute left-1/2 -translate-x-1/2 flex items-center gap-16'>
         {links.map((link) => (
-          <a
+          <Link
             key={link.href}
-            href={link.href}
+            to={link.href}
             className={`text-sm font-normal transition-colors duration-200 ${
               transparent
                 ? 'text-white hover:text-white/70'
@@ -33,7 +34,7 @@ const Navbar = ({ user, transparent = false, className = '' }: NavbarProps) => {
             }`}
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </div>
       {/* RIGHT — Auth */}
