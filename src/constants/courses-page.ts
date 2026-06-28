@@ -1,3 +1,13 @@
+import {
+  Briefcase,
+  Database,
+  Film,
+  Monitor,
+  Notebook,
+  Palette,
+  Users,
+} from 'lucide-react';
+
 export interface CourseInstructor {
   name: string;
   avatar: string;
@@ -22,7 +32,7 @@ export interface PageCategory {
   id: string;
   label: string;
   description: string;
-  iconName: string;
+  iconName: React.ElementType;
   iconBgColor: string;
 }
 
@@ -77,7 +87,7 @@ export const PAGE_CATEGORIES: PageCategory[] = [
     label: 'Design',
     description:
       'Learn UI/UX, graphic design, branding and visual communication from industry experts.',
-    iconName: 'Brush',
+    iconName: Palette,
     iconBgColor: '#49BBBD',
   },
   {
@@ -85,56 +95,56 @@ export const PAGE_CATEGORIES: PageCategory[] = [
     label: 'Development',
     description:
       'Master web and mobile development with modern frameworks and best practices.',
-    iconName: 'Monitor',
-    iconBgColor: '#8B5CF6',
+    iconName: Monitor,
+    iconBgColor: '#E1E2FF',
   },
   {
     id: 'development-2',
     label: 'Development',
     description:
       'Backend systems, databases, APIs and cloud infrastructure for scalable apps.',
-    iconName: 'Database',
-    iconBgColor: '#93C5FD',
+    iconName: Database,
+    iconBgColor: '#E1F1FF',
   },
   {
     id: 'business',
     label: 'Business',
     description:
       'Finance, marketing, entrepreneurship and leadership skills for your career.',
-    iconName: 'Briefcase',
-    iconBgColor: '#49BBBD',
+    iconName: Briefcase,
+    iconBgColor: '#BFF0E7',
   },
   {
     id: 'marketing',
     label: 'Marketing',
     description:
       'Digital marketing, SEO, social media and content strategy to grow any brand.',
-    iconName: 'TrendingUp',
-    iconBgColor: '#F59E0B',
+    iconName: Users,
+    iconBgColor: '#FFE3C1',
   },
   {
     id: 'photography',
     label: 'Photography',
     description:
       'Composition, lighting, editing and storytelling through the lens.',
-    iconName: 'Camera',
-    iconBgColor: '#EC4899',
+    iconName: Notebook,
+    iconBgColor: '#FFD3D3',
   },
   {
     id: 'acting',
     label: 'Acting',
     description:
       'Performance techniques, script analysis and on-camera presence for all levels.',
-    iconName: 'Film',
-    iconBgColor: '#6B7280',
+    iconName: Film,
+    iconBgColor: '#CBCBD7',
   },
   {
     id: 'personal',
     label: 'Business',
     description:
       'Productivity, leadership, public speaking and personal effectiveness skills.',
-    iconName: 'Briefcase',
-    iconBgColor: '#49BBBD',
+    iconName: Briefcase,
+    iconBgColor: '#BFF0E7',
   },
 ];
 

@@ -14,7 +14,9 @@ export default function CourseSectionCard({
   iconBgColor = '#49BBBD',
 }: CategoryCardProps) {
   return (
-    <div className={`w-[280px] h-[280px] shadow-lg rounded-2xl ${className}`}>
+    <div
+      className={`w-[280px] h-[280px] shadow-lg rounded-2xl ${className} hover:shadow-2xl cursor-pointer`}
+    >
       <div className='p-6 flex flex-col justify-center items-center gap-6'>
         <div
           className={`flex items-center justify-center p-4 rounded-sm `}

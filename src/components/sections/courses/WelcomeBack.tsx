@@ -7,7 +7,7 @@ export default function WelcomeBack({ user }) {
     <section className='py-10 px-16 w-full'>
       <div className='flex flex-col gap-4'>
         <div className='flex justify-between items-center '>
-          <h3 className='font-bold text-2xl '>
+          <h3 className='font-semibold text-2xl '>
             Welcome back, ready for your lesson?
           </h3>
           <p className='text-primary text-sm font-semibold hover:underline cursor-pointer'>
