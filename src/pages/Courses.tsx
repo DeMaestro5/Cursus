@@ -1,39 +1,13 @@
-import CourseCard from '../components/UI/courses/CourseCard';
-import CategoryCard from '../components/UI/courses/CategoryCard';
-import { CalendarDays } from 'lucide-react';
-import CourseSectionCard from '../components/UI/courses/CourseSectionCard';
+import Navbar from '../components/layout/Navbar';
+import WelcomeBack from '../components/sections/courses/WelcomeBack';
 
 export default function Courses({ user }) {
   return (
-    <div className='py-10 px-10 flex gap-10'>
-      <div>
-        <CourseCard
-          thumbnail='/src/assets/landing/whatImage2.jpg'
-          title='AWS Certified Solution Architect'
-          description='aliquam massa. Sed eget arcu at turpis dignissim imperdiet. Sed dolor massa,'
-          duration='3 months'
-          category='Design'
-          originalPrice={100}
-          price={80}
-          user={user}
-        />
-      </div>
-      <div>
-        <CategoryCard
-          icon={<CalendarDays />}
-          title='Development'
-          description='nulla non, interdum placerat turpis. Ut eros purus, consectetur pellentesque libero nec, viverra congue eros.'
-          iconBgColor='#49BBBD'
-        />
-      </div>
-      <div>
-        <CourseSectionCard
-          thumbnail='/src/assets/landing/whatImage2.jpg'
-          currentLesson={3}
-          totalLesson={5}
-          title='AWS Certified Solution Architect'
-          user={user}
-        />
+    <div>
+      <Navbar user={user} />
+
+      <div className='max-w-full mx-auto w-full bg-sky-100/50'>
+        <WelcomeBack user={user} />
       </div>
     </div>
   );

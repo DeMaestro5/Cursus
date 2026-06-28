@@ -16,11 +16,11 @@ const Navbar = ({ user, transparent = false, className = '' }: NavbarProps) => {
   return (
     <nav
       className={`flex w-full px-10 py-4 transition-colors duration-300 flex-row justify-between items-center gap-4 sticky top-0 z-50 ${
-        transparent ? 'bg-transparent' : 'bg-white shadow-md'
+        transparent ? 'bg-transparent' : 'bg-white'
       } ${className}`}
     >
       {/* LEFT — Logo */}
-      <Logo transparent={true} />
+      <Logo />
       {/* MIDDLE — Nav links */}
       <div className='absolute left-1/2 -translate-x-1/2 flex items-center gap-16'>
         {links.map((link) => (

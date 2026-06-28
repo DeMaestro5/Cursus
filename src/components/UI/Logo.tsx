@@ -15,7 +15,7 @@ export default function logo({ transparent, className = '' }: LogoProp) {
       </div>
       <span
         className={`font-black text-xl tracking-tight ${
-          transparent ? 'text-white' : 'text-navy'
+          transparent ? 'text-white' : 'text-gray-text'
         }`}
       >
         cursus
