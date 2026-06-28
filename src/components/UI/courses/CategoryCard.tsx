@@ -1,4 +1,4 @@
-interface CourseSectionCardProps {
+interface CategoryCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ export default function CourseSectionCard({
   description,
   className = '',
   iconBgColor = '#49BBBD',
-}: CourseSectionCardProps) {
+}: CategoryCardProps) {
   return (
     <div className={`w-[280px] h-[280px] shadow-lg rounded-2xl ${className}`}>
       <div className='p-6 flex flex-col justify-center items-center gap-6'>
