@@ -3,6 +3,7 @@ import Choice from '../components/sections/courses/Choice';
 import Recommended from '../components/sections/courses/Recommended';
 import TopCategory from '../components/sections/courses/TopCategory';
 import WelcomeBack from '../components/sections/courses/WelcomeBack';
+import CoachingBanner from '../components/UI/CoachingBanner';
 
 export default function Courses({ user }) {
   return (
@@ -17,6 +18,9 @@ export default function Courses({ user }) {
         <Recommended user={user} />
       </div>
       <Choice user={user} />
+      <div className='flex justify-center items-center py-10 px-16'>
+        <CoachingBanner />
+      </div>
     </div>
   );
 }
