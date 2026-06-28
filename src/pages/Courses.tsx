@@ -1,5 +1,6 @@
 import Navbar from '../components/layout/Navbar';
 import Choice from '../components/sections/courses/Choice';
+import PersonalDev from '../components/sections/courses/PersonalDev';
 import Recommended from '../components/sections/courses/Recommended';
 import TopCategory from '../components/sections/courses/TopCategory';
 import WelcomeBack from '../components/sections/courses/WelcomeBack';
@@ -21,6 +22,7 @@ export default function Courses({ user }) {
       <div className='flex justify-center items-center py-10 px-16'>
         <CoachingBanner />
       </div>
+      <PersonalDev user={user} />
     </div>
   );
 }
