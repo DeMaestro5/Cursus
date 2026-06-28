@@ -1,5 +1,5 @@
 import CourseCard from '../components/UI/courses/CourseCard';
-import CourseSectionCard from '../components/UI/courses/CourseSectionCard';
+import CategoryCard from '../components/UI/courses/CategoryCard';
 import { CalendarDays } from 'lucide-react';
 
 export default function Courses({ user }) {
@@ -18,7 +18,7 @@ export default function Courses({ user }) {
         />
       </div>
       <div>
-        <CourseSectionCard
+        <CategoryCard
           icon={<CalendarDays />}
           title='Development'
           description='nulla non, interdum placerat turpis. Ut eros purus, consectetur pellentesque libero nec, viverra congue eros.'
