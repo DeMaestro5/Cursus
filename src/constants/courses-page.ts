@@ -236,7 +236,7 @@ export const RECOMMENDED_COURSES: PageCourse[] = [
     description:
       'SEO, paid ads, email marketing and social media strategy to grow any business online.',
     thumbnail:
-      'https://images.unsplash.com/photo-1432888622747-4eb9a8f5a07d?w=600&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop',
     category: 'Marketing',
     duration: '3 Month',
     price: 80,
