@@ -26,7 +26,9 @@ export default function CourseCard({
   className = '',
 }: CourseCardProps) {
   return (
-    <div className={`w-[360px] h-[550px] shadow-lg rounded-2xl ${className} `}>
+    <div
+      className={`w-[360px] h-[550px] shadow-lg rounded-2xl ${className} cursor-pointer hover:shadow-2xl`}
+    >
       <div className='p-4'>
         <img
           src={thumbnail}
