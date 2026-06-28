@@ -1,6 +1,7 @@
 import CourseCard from '../components/UI/courses/CourseCard';
 import CategoryCard from '../components/UI/courses/CategoryCard';
 import { CalendarDays } from 'lucide-react';
+import CourseSectionCard from '../components/UI/courses/CourseSectionCard';
 
 export default function Courses({ user }) {
   return (
@@ -23,6 +24,15 @@ export default function Courses({ user }) {
           title='Development'
           description='nulla non, interdum placerat turpis. Ut eros purus, consectetur pellentesque libero nec, viverra congue eros.'
           iconBgColor='#49BBBD'
+        />
+      </div>
+      <div>
+        <CourseSectionCard
+          thumbnail='/src/assets/landing/whatImage2.jpg'
+          currentLesson={3}
+          totalLesson={5}
+          title='AWS Certified Solution Architect'
+          user={user}
         />
       </div>
     </div>
