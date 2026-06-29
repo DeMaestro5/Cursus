@@ -16,6 +16,7 @@ export default function Choice({ user }) {
         <div className='flex gap-6'>
           {PERSONAL_DEVELOPMENT_COURSES.map((course) => (
             <CourseCard
+              id={course.id}
               thumbnail={course.thumbnail}
               title={course.title}
               description={course.description}

@@ -15,6 +15,7 @@ export default function Recommended({ user }) {
         <div className='flex gap-6'>
           {RECOMMENDED_COURSES.map((course) => (
             <CourseCard
+              id={course.id}
               thumbnail={course.thumbnail}
               title={course.title}
               description={course.description}
