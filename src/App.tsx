@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Courses from './pages/Courses';
+import Courses from './pages/course-page/Courses';
 import Landing from './pages/Landing';
 import type { User } from './types/user.types';
 
@@ -16,8 +16,8 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/courses' element={<Courses user={user} />} />
+        {/* <Route path='/course/:id' element={<CourseDetailPage />} /> */}
       </Routes>
     </BrowserRouter>
   );
 }
-// watcher test

@@ -23,6 +23,7 @@ export default function StudentViewing({ user }) {
               price={course.price}
               originalPrice={course.originalPrice}
               user={user}
+              key={course.id}
             />
           ))}
         </div>

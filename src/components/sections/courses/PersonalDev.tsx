@@ -24,6 +24,7 @@ export default function Choice({ user }) {
               originalPrice={course.originalPrice}
               category={course.category}
               user={user}
+              key={course.id}
             />
           ))}
         </div>

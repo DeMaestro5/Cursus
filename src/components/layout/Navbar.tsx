@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { NAV_LINKS } from '../../constants/navigation';
 import type { User } from '../../types/user.types';
 import Avatar from '../UI/Avatar';
@@ -17,24 +17,30 @@ const Navbar = ({ user, transparent = false, className = '' }: NavbarProps) => {
     <nav
       className={`flex w-full px-10 py-4 transition-colors duration-300 flex-row justify-between items-center gap-4 sticky top-0 z-50 ${
         transparent ? 'bg-transparent' : 'bg-white'
-      } ${className}`}
+      }  ${className}`}
     >
       {/* LEFT — Logo */}
-      <Logo />
+      <Logo transparent={transparent} />
       {/* MIDDLE — Nav links */}
       <div className='absolute left-1/2 -translate-x-1/2 flex items-center gap-16'>
         {links.map((link) => (
-          <Link
+          <NavLink
             key={link.href}
             to={link.href}
-            className={`text-sm font-normal transition-colors duration-200 ${
-              transparent
-                ? 'text-white hover:text-white/70'
-                : 'text-navy hover:text-primary'
-            }`}
+            className={({ isActive }) =>
+              `text-sm font-normal transition-colors duration-200 ${
+                isActive
+                  ? transparent
+                    ? 'text-white border-b-2 border-white pb-1' // active on transparent bg
+                    : 'text-primary border-b-2 border-primary pb-1' // active on white bg
+                  : transparent
+                    ? 'text-white hover:text-white/70'
+                    : 'text-navy hover:text-primary'
+              }`
+            }
           >
             {link.label}
-          </Link>
+          </NavLink>
         ))}
       </div>
       {/* RIGHT — Auth */}
