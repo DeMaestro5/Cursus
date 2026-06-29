@@ -1,8 +1,10 @@
 import { Clock, LayoutGrid } from 'lucide-react';
 import type { User } from '../../../types/user.types';
 import Avatar from '../Avatar';
+import { useNavigate } from 'react-router-dom';
 
 interface CourseCardProps {
+  id: string;
   thumbnail: string;
   title: string;
   description: string;
@@ -15,6 +17,7 @@ interface CourseCardProps {
 }
 
 export default function CourseCard({
+  id,
   thumbnail,
   title,
   description,
@@ -25,9 +28,11 @@ export default function CourseCard({
   originalPrice,
   className = '',
 }: CourseCardProps) {
+  const navigate = useNavigate();
   return (
     <div
       className={`w-[360px] h-[550px] shadow-lg rounded-2xl ${className} cursor-pointer hover:shadow-2xl`}
+      onClick={() => navigate(`/course/${id}`)}
     >
       <div className='p-4'>
         <img

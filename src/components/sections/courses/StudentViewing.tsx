@@ -15,6 +15,7 @@ export default function StudentViewing({ user }) {
         <div className='flex gap-6'>
           {STUDENTS_VIEWING_COURSES.map((course) => (
             <CourseCard
+              id={course.id}
               thumbnail={course.thumbnail}
               title={course.title}
               description={course.description}
