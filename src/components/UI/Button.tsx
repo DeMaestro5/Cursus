@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export type ButtonVariant =
   | 'primary'
@@ -19,7 +20,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-neon text-white hover:bg-primary/90 border border-transparent',
+  primary:
+    'bg-primary text-white hover:bg-primary/90 border border-transparent',
   secondary:
     'bg-neon text-white hover:bg-secondary/90 border border-transparent',
   outline:
@@ -57,7 +59,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+        className={twMerge(
+          baseStyles,
+          variantStyles[variant],
+          sizeStyles[size],
+          className,
+        )}
         disabled={disabled || isLoading}
         {...props}
       >
