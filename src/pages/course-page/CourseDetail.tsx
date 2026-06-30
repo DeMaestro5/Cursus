@@ -9,8 +9,8 @@ import {
   type PageCourse,
 } from '../../constants/courses-page';
 
+import CourseTabs from '../../components/UI/courses/course-detail/courseTabs';
 import { COURSE_REVIEWS } from '../../constants/courses-reviews';
-import ReviewSection from '../../components/UI/courses/course-detail/ReviewSection';
 
 interface CourseDetailProps {
   user: User;
@@ -19,6 +19,11 @@ interface CourseDetailProps {
 export default function CourseDetail({ user }: CourseDetailProps) {
   const { id } = useParams();
 
+  const courseReview = COURSE_REVIEWS.filter(
+    (review) => review.courseId === id,
+  );
+  if (!courseReview) return 'CourseReview not found';
+  console.log(courseReview);
   const allCourses: PageCourse[] = [
     ...RECOMMENDED_COURSES,
     ...TOP_CHOICE_COURSES,
@@ -26,15 +31,11 @@ export default function CourseDetail({ user }: CourseDetailProps) {
     ...STUDENTS_VIEWING_COURSES,
   ];
 
-  const course = allCourses.find((course) => course.id === id);
-  const courseReview = COURSE_REVIEWS.filter(
-    (review) => review.courseId === id,
-  );
-  console.log(courseReview);
-  if (!courseReview) return 'CourseReview not found';
-  if (!course) return 'Course not found';
+  const courses = allCourses.find((course) => course.id === id);
 
-  console.log(course);
+  if (!courses) return 'Course not found';
+
+  console.log(courses);
 
   return (
     <div>
@@ -42,7 +43,7 @@ export default function CourseDetail({ user }: CourseDetailProps) {
       <div>
         <img />
         <div className=''>
-          <ReviewSection courseReview={courseReview} />
+          <CourseTabs courseReview={courseReview} course={courses} />
         </div>
       </div>
     </div>

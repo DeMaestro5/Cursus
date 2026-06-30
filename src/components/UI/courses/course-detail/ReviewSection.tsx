@@ -13,8 +13,7 @@ export default function ReviewSection({
   const visibleReviews = showAll ? courseReview : courseReview.slice(0, 4);
   return (
     <div>
-      <div>tabs</div>
-      <div className='w-[600px] h-[600px] flex flex-col rounded-2xl bg-sky-400/10 p-6'>
+      <div className=' h-[600px] flex flex-col rounded-2xl bg-sky-400/10 p-6'>
         {/**review section */}
         <ReviewSummary />
         <div className='p-6 flex flex-col gap-3 h-[500px] overflow-y-auto scrollbar-none '>

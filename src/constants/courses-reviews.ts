@@ -140,22 +140,4 @@ export const COURSE_REVIEWS: CourseReview[] = [
       'Good structure, clear explanations. Would have liked more practice exams toward the end.',
     createdAt: '2 weeks ago',
   },
-  {
-    id: 'rev-4',
-    courseId: 'rec-1',
-    user: REVIEWERS[3],
-    rating: 5,
-    review:
-      'Comprehensive coverage of AWS services. The hands-on labs made all the difference compared to other courses I tried.',
-    createdAt: '4 months ago',
-  },
-  {
-    id: 'rev-5',
-    courseId: 'rec-1',
-    user: REVIEWERS[0],
-    rating: 4,
-    review:
-      'Good structure, clear explanations. Would have liked more practice exams toward the end.',
-    createdAt: '2 weeks ago',
-  },
 ];
