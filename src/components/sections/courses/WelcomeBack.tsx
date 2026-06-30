@@ -19,8 +19,8 @@ export default function WelcomeBack({ user }) {
             <CourseSectionCard
               thumbnail={course.thumbnail}
               title={course.title}
-              currentLesson={course.currentLesson}
-              totalLesson={course.totalLesson}
+              value={course.currentLesson}
+              total={course.totalLesson}
               user={user}
               key={course.id}
             />

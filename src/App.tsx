@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/courses' element={<Courses user={user} />} />
-        <Route path='/course/:id' element={<CourseDetail />} />
+        <Route path='/course/:id' element={<CourseDetail user={user} />} />
       </Routes>
     </BrowserRouter>
   );

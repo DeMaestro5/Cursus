@@ -6,15 +6,15 @@ interface CourseSectionCardProps {
   thumbnail?: string;
   title?: string;
   user?: User;
-  currentLesson: number;
-  totalLesson: number;
+  value: number;
+  total: number;
   className?: string;
 }
 
 export default function CourseSectionCard({
   thumbnail,
-  currentLesson,
-  totalLesson,
+  value,
+  total,
   title,
   user,
   className = '',
@@ -30,15 +30,12 @@ export default function CourseSectionCard({
         <h3 className='font-semibold'>{title}</h3>
         <div className='flex flex-col gap-6'>
           <div className='flex gap-2 items-center'>
-            <Avatar src='/src/assets/landing/whatIsImage.jpg' alt='' />
+            <Avatar src={user.avatar} alt={user.name} />
             {user.name}
           </div>
-          <ProgressBar
-            currentLesson={currentLesson}
-            totalLesson={totalLesson}
-          />
+          <ProgressBar value={value} total={total} />
         </div>
-        <p className='text-xs text-muted ml-auto'>{`Lesson ${currentLesson} of ${totalLesson}`}</p>
+        <p className='text-xs text-muted ml-auto'>{`Lesson ${value} of ${total}`}</p>
       </div>
     </div>
   );
