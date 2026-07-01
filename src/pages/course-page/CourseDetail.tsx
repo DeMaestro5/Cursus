@@ -16,6 +16,7 @@ import CoursePriceCard from '../../components/UI/courses/course-detail/CoursePri
 import TopEdCard from '../../components/UI/courses/course-detail/TopEdCard';
 import CourseCard from '../../components/UI/courses/CourseCard';
 import Everything from '../../components/sections/landing/Everything';
+import Footer from '../../components/UI/Footer';
 
 interface CourseDetailProps {
   user: User;
@@ -118,6 +119,8 @@ export default function CourseDetail({ user }: CourseDetailProps) {
                   bgImage={offer.bgImage}
                   percentage={offer.percentage}
                   description={offer.description}
+                  percentageBG='#FF0000'
+                  fontWeight='800'
                   key={offer.id}
                 />
               ))}
@@ -125,6 +128,7 @@ export default function CourseDetail({ user }: CourseDetailProps) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

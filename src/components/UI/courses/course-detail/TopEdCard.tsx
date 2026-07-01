@@ -3,6 +3,8 @@ interface TopEdCardProps {
   bgImage: string;
   percentage: number;
   description: string;
+  percentageBG: string;
+  fontWeight: React.CSSProperties['fontWeight'];
 }
 
 export default function TopEdCard({
@@ -10,6 +12,8 @@ export default function TopEdCard({
   bgImage,
   percentage,
   description,
+  percentageBG,
+  fontWeight,
 }: TopEdCardProps) {
   return (
     <div className='relative w-full h-80'>
@@ -19,7 +23,10 @@ export default function TopEdCard({
         className='w-full h-full object-cover rounded-2xl'
       />
       <div className='absolute inset-0 p-10 flex flex-col gap-2'>
-        <div className='bg-[#FF0000] w-12 h-12 rounded-lg text-white font-semibold flex justify-center items-center text-sm'>
+        <div
+          className={`w-12 h-12 rounded-lg text-white flex justify-center items-center text-sm`}
+          style={{ backgroundColor: percentageBG, fontWeight }}
+        >
           {percentage}%
         </div>
         <h3 className='text-white font-semibold text-xl'>{title}</h3>
