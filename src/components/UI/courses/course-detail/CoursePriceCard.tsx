@@ -37,7 +37,7 @@ export default function CoursePriceCard({
           <p className='text-muted font-semibold line-through'>
             {originalPrice}
           </p>
-          <p className='text-muted font-semibold '>{percentageOff} Off</p>
+          <p className='text-muted font-semibold '>{percentageOff}% Off</p>
         </div>
         <div className='flex justify-center items-center'>
           <p className='text-primary font-semibold text-sm'>

@@ -12,6 +12,25 @@ export interface CourseInstructor {
   name: string;
   avatar: string;
 }
+export interface TopEdOffer {
+  id: string;
+  title: string;
+  bgImage: string;
+  percentage: number;
+  description: string;
+}
+
+export interface MarketingArticle {
+  id: string;
+  title: string;
+  thumbnail: string;
+  category: string;
+  duration: string;
+  price: number;
+  originalPrice: number;
+  instructor: CourseInstructor;
+  description: string;
+}
 
 export interface PageCourse {
   id: string;
@@ -437,5 +456,106 @@ export const STUDENTS_VIEWING_COURSES: PageCourse[] = [
     originalPrice: 100,
     rating: 4.8,
     instructor: INSTRUCTORS.david,
+  },
+];
+
+export const TOP_ED_OFFERS: TopEdOffer[] = [
+  {
+    id: 'offer-1',
+    title: 'FOR INSTRUCTORS',
+    bgImage:
+      'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop',
+    percentage: 50,
+    description:
+      "TOTC's school management software helps traditional and online schools manage scheduling,",
+  },
+  {
+    id: 'offer-2',
+    title: 'FOR INSTRUCTORS',
+    bgImage:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+    percentage: 50,
+    description:
+      "TOTC's school management software helps traditional and online schools manage scheduling,",
+  },
+  {
+    id: 'offer-3',
+    title: 'FOR INSTRUCTORS',
+    bgImage:
+      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    percentage: 50,
+    description:
+      "TOTC's school management software helps traditional and online schools manage scheduling,",
+  },
+];
+
+export const MARKETING_ARTICLES: MarketingArticle[] = [
+  {
+    id: 'article-1',
+    title: 'AWS Certified Solutions Architect',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    thumbnail:
+      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
+    category: 'Design',
+    duration: '3 Month',
+    price: 80,
+    originalPrice: 100,
+    instructor: {
+      name: 'Lina',
+      avatar:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop',
+    },
+  },
+  {
+    id: 'article-2',
+    title: 'AWS Certified Solutions Architect',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    thumbnail:
+      'https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&h=400&fit=crop',
+    category: 'Design',
+    duration: '3 Month',
+    price: 80,
+    originalPrice: 100,
+    instructor: {
+      name: 'Lina',
+      avatar:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop',
+    },
+  },
+  {
+    id: 'article-3',
+    title: 'AWS Certified Solutions Architect',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    thumbnail:
+      'https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=600&h=400&fit=crop',
+    category: 'Design',
+    duration: '3 Month',
+    price: 80,
+    originalPrice: 100,
+    instructor: {
+      name: 'Lina',
+      avatar:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop',
+    },
+  },
+  {
+    id: 'article-4',
+    title: 'AWS Certified Solutions Architect',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    thumbnail:
+      'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=600&h=400&fit=crop',
+    category: 'Design',
+    duration: '3 Month',
+    price: 80,
+    originalPrice: 100,
+    instructor: {
+      name: 'Lina',
+      avatar:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop',
+    },
   },
 ];
